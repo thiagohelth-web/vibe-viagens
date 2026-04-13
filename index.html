@@ -3,92 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kauabunga - Delivery de Esfirras</title>
+    <title>VIBE | Nomadismo Inteligente</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .bg-red-primary { background-color: #e31c1c; }
-        .text-red-primary { color: #e31c1c; }
-        .border-red-primary { border-color: #e31c1c; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #f4f1ea; color: #3d3d3d; }
+        .font-vibe { font-family: 'Bebas Neue', cursive; }
+        .bg-rustic-red { background-color: #922b21; } /* Vermelho Terracota */
+        .text-rustic-red { color: #922b21; }
+        .border-rustic { border-color: #d4a373; }
+        .texture-overlay {
+            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="texture-overlay">
 
-    <header class="bg-red-primary text-white p-4 shadow-lg sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-tighter italic">KAUABUNGA!</h1>
-            <nav>
-                <a href="#cardapio" class="font-bold hover:underline">Cardápio</a>
-            </nav>
-        </div>
+    <header class="p-6 flex justify-between items-center border-b border-gray-200">
+        <h1 class="text-4xl font-vibe tracking-widest text-rustic-red">VIBE.</h1>
+        <a href="https://wa.me/5522992777193" target="_blank" class="text-sm font-bold border-b-2 border-rustic-red pb-1 hover:text-black transition">CONTATO</a>
     </header>
 
-    <section class="bg-white py-12 px-4 border-b border-gray-200">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
-                As melhores esfirras <br><span class="text-red-primary">da região!</span>
-            </h2>
-            <p class="text-gray-600 mb-8 text-lg">Massa artesanal, recheio generoso e entrega rápida.</p>
-            
-            <a href="https://wa.me/5522992776193?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Kauabunga" 
-               target="_blank"
-               class="inline-flex items-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full text-xl transition-transform transform hover:scale-105 shadow-xl">
-                <i class="fab fa-whatsapp mr-2 text-2xl"></i>
-                PEÇA AGORA PELO WHATSAPP
-            </a>
+    <section class="hero-gradient h-[70vh] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block">Clube de Viajantes</span>
+            <h2 class="text-6xl md:text-8xl font-vibe mb-6">O MUNDO É O SEU QUINTAL</h2>
+            <p class="max-w-xl mx-auto text-lg font-light mb-8 italic">Poupe agora. Explore depois. Um sistema de consórcio feito para nômades modernos.</p>
+            <a href="#plano" class="bg-rustic-red hover:bg-red-900 text-white font-bold py-4 px-10 rounded-sm transition shadow-2xl">VER PLANO 7K</a>
         </div>
     </section>
 
-    <main id="cardapio" class="container mx-auto py-12 px-4">
-        <h3 class="text-2xl font-bold mb-8 border-l-4 border-red-primary pl-3">Destaques do Dia</h3>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
-                    <i class="fas fa-pizza-slice text-5xl"></i>
-                </div>
-                <div class="p-4">
-                    <h4 class="font-bold text-xl">Carne Premium</h4>
-                    <p class="text-gray-500 text-sm mb-4">Temperada com limão, tomate e especiarias Kauabunga.</p>
-                    <span class="text-red-primary font-bold text-lg">R$ 5,90</span>
-                </div>
+    <section id="plano" class="py-20 container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="border-l-8 border-rustic-red pl-8">
+                <h3 class="text-4xl font-vibe text-gray-800 mb-6 uppercase">Como o VIBE funciona</h3>
+                <ul class="space-y-6 text-lg">
+                    <li><strong class="text-rustic-red">01.</strong> Grupo exclusivo de 50 viajantes.</li>
+                    <li><strong class="text-rustic-red">02.</strong> Apenas R$ 350 mensais (menos de R$ 12 por dia).</li>
+                    <li><strong class="text-rustic-red">03.</strong> 8 meses de carência para formar o fundo de giro.</li>
+                    <li><strong class="text-rustic-red">04.</strong> Sorteios mensais de R$ 7.000 a partir do 9º mês.</li>
+                </ul>
             </div>
-
-            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
-                    <i class="fas fa-cheese text-5xl"></i>
+            <div class="bg-white p-10 shadow-xl border-t-4 border-rustic-red">
+                <h4 class="font-vibe text-3xl mb-4">Sua Próxima Parada</h4>
+                <p class="text-gray-600 mb-6">Escolha entre 5 destinos épicos quando for contemplado. De montanhas a ilhas paradisíacas.</p>
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Gramado</span>
+                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Porto de Galinhas</span>
+                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Arraial do Cabo</span>
+                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Buenos Aires</span>
+                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Foz do Iguaçu</span>
                 </div>
-                <div class="p-4">
-                    <h4 class="font-bold text-xl">Queijo com Bacon</h4>
-                    <p class="text-gray-500 text-sm mb-4">Mix de queijos com cubos crocantes de bacon defumado.</p>
-                    <span class="text-red-primary font-bold text-lg">R$ 6,50</span>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
-                <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">
-                    <i class="fas fa-cookie text-5xl"></i>
-                </div>
-                <div class="p-4">
-                    <h4 class="font-bold text-xl">Nutella com Morango</h4>
-                    <p class="text-gray-500 text-sm mb-4">A queridinha do delivery. Irresistível e cremosa.</p>
-                    <span class="text-red-primary font-bold text-lg">R$ 8,90</span>
-                </div>
+                <a href="https://wa.me/5522992777193?text=Quero%20entrar%20no%20grupo%20VIBE" class="block text-center bg-gray-900 text-white py-4 font-bold hover:bg-black transition">GARANTIR MINHA VAGA</a>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center">
-        <p class="font-bold text-white mb-2 italic">KAUABUNGA ESPETARIA & DELIVERY</p>
-        <p class="text-sm">WhatsApp: (22) 99277-6193</p>
-        <div class="mt-4 text-xs">
-            &copy; 2026 - Site de Teste - Todos os direitos reservados.
+    <footer class="bg-gray-100 py-12 border-t border-gray-200 text-center">
+        <p class="font-vibe text-2xl text-gray-400 mb-4 tracking-tighter">VIBE TRAVEL CO.</p>
+        <p class="text-xs uppercase tracking-widest text-gray-500">Araruama - RJ | WhatsApp: 22 99277-7193</p>
+        <div class="mt-8 flex justify-center space-x-6 text-gray-400">
+            <i class="fab fa-instagram text-xl"></i>
+            <i class="fab fa-facebook text-xl"></i>
+            <i class="fab fa-whatsapp text-xl"></i>
         </div>
     </footer>
 
-    <a href="https://wa.me/5522992776193" 
-       class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:bg-green-600 transition-all z-50">
-        <i class="fab fa-whatsapp text-3xl"></i>
+    <a href="https://wa.me/5522992777193" class="fixed bottom-8 right-8 bg-rustic-red text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
+        <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 
 </body>
