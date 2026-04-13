@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIBE | Consórcio de Viagens</title>
+    <title>VIBE Travel Go. | Consórcio de Experiências Inesquecíveis</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -30,11 +30,12 @@
         }
         .btn-caixa:hover { background-color: #d68100; }
         .hero-banner {
-            background: linear-gradient(90deg, var(--caixa-azul) 30%, rgba(0, 92, 169, 0.5) 100%), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1335&auto=format&fit=crop');
+            background: linear-gradient(90deg, var(--caixa-azul) 30%, rgba(0, 92, 169, 0.5) 100%), url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1335&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
         }
-        .bonus-vibe { background: #eef6ff; border-left: 5px solid var(--caixa-azul); }
+        /* Efeito de sobreposição de textura sutil */
+        .texture-overlay { background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); }
     </style>
 </head>
 <body>
@@ -44,86 +45,111 @@
             <div class="flex items-center gap-2">
                 <div class="bg-caixa-azul text-white font-bold px-3 py-1 rounded text-2xl tracking-tighter italic">VIBE</div>
                 <div class="h-8 w-[2px] bg-gray-300 mx-2"></div>
-                <span class="text-caixa-azul font-bold text-sm uppercase leading-tight">Consórcio de<br>Viagens</span>
+                <span class="text-caixa-azul font-bold text-sm uppercase leading-tight">Travel Go.</span>
             </div>
-            <a href="https://wa.me/5522992777193?text=Olá!%20Sou%20cliente%20e%20quero%20acessar%20meu%20painel%20VIBE." target="_blank" class="text-xs font-bold text-caixa-azul border border-caixa-azul px-4 py-2 rounded hover:bg-caixa-azul hover:text-white transition uppercase">Acesso Cliente</a>
+            <a href="https://wa.me/5522992777193?text=Olá!%20Sou%20cliente%20e%20quero%20acessar%20meu%20painel." target="_blank" class="text-xs font-bold text-caixa-azul border border-caixa-azul px-4 py-2 rounded hover:bg-caixa-azul hover:text-white transition uppercase">Acesso Cliente</a>
         </div>
     </header>
 
-    <section class="hero-banner py-20 px-6 text-white">
+    <section class="hero-banner py-24 px-6 text-white texture-overlay">
         <div class="container mx-auto">
             <div class="max-w-lg">
-                <h2 class="text-4xl font-bold mb-4 leading-tight">Sua contemplação, suas regras.</h2>
-                <p class="text-lg mb-8 opacity-90 font-light italic text-yellow-400 font-bold">Acumule suas contemplações e realize a viagem dos seus sonhos com o dobro de crédito.</p>
+                <h2 class="text-5xl font-bold mb-5 leading-tight text-shadow">Onde sua próxima grande história começa.</h2>
+                <p class="text-xl mb-10 opacity-90 font-light italic">Planeje hoje a experiência inesquecível de amanhã. O Consórcio VIBE é a ponte segura e inteligente entre o seu sonho e o seu embarque.</p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="https://wa.me/5522992777193?text=Olá!%20Quero%20fazer%20uma%20simulação%20do%20consórcio%20VIBE%20Travel%20Go." class="btn-caixa px-8 py-3 rounded shadow-lg text-lg uppercase">Simular Agora</a>
+                    <a href="https://wa.me/5522992777193?text=Olá!%20Quero%20planejar%20minha%20viagem%20com%20o%20consórcio%20VIBE%20Travel%20Go." class="btn-caixa px-8 py-3 rounded shadow-lg text-lg uppercase">Simular Minha Viagem</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-12 container mx-auto px-6">
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="p-10 bg-gray-50 rounded-xl border border-gray-100 shadow-sm">
+                <h3 class="text-3xl font-bold text-caixa-azul uppercase tracking-tight">VIBE Travel Go.: O que nos move</h3>
+                <p class="text-sm text-gray-700 mt-6 leading-relaxed">
+                    Nascemos de uma paixão: **viabilizar experiências de vida.** Não somos apenas uma administradora de consórcios bancários; somos uma consultoria especializada em transformar o planejamento financeiro em bilhetes de embarque.
+                    <br><br>
+                    Nosso propósito é democratizar o acesso a viagens de alto padrão, nacionais e internacionais, garantindo que você e sua família possam explorar o mundo com tranquilidade, sem juros e com a segurança de um fundo comum estrategicamente gerido. Na **VIBE Travel Go.**, seu planejamento é nossa missão.
+                </p>
+                <p class="text-[10px] mt-4 text-caixa-azul font-bold uppercase italic">Conectando destinos, viabilizando sonhos. | Araruama - RJ</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1533240332867-cb29733188f6?q=80&w=800&auto=format&fit=crop" alt="Família feliz viajando" class="rounded-xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white p-6 rounded shadow border-l-4 border-caixa-laranja">
+            <div class="bg-white p-6 rounded shadow-lg border-l-4 border-caixa-azul">
                 <i class="fas fa-layer-group text-caixa-azul text-xl mb-3"></i>
                 <h4 class="font-bold text-caixa-azul uppercase text-sm">Acúmulo de Crédito</h4>
-                <p class="text-xs text-gray-600 mt-2">Não quer viajar agora? Você pode acumular suas contemplações para usar o valor total em uma viagem de maior valor no futuro.</p>
+                <p class="text-xs text-gray-600 mt-2">Escolha esperar. Você pode acumular suas contemplações mensais para utilizar o dobro do crédito em uma viagem Premium ou internacional.</p>
             </div>
-            <div class="bg-white p-6 rounded shadow border-l-4 border-caixa-laranja">
+            <div class="bg-white p-6 rounded shadow-lg border-l-4 border-caixa-azul">
                 <i class="fas fa-hand-holding-usd text-caixa-azul text-xl mb-3"></i>
                 <h4 class="font-bold text-caixa-azul uppercase text-sm">Sinal Proporcional</h4>
-                <p class="text-xs text-gray-600 mt-2">O valor do sinal (10%) acompanha o acúmulo. Ao utilizar créditos dobrados, o sinal também é acumulado, garantindo sua reserva.</p>
+                <p class="text-xs text-gray-600 mt-2">O sinal proporcional de 10% do valor contemplado acompanha o acúmulo, garantindo a reserva das suas experiências de maior valor.</p>
             </div>
-            <div class="bg-white p-6 rounded shadow border-l-4 border-caixa-laranja">
-                <i class="fas fa-star text-caixa-azul text-xl mb-3"></i>
-                <h4 class="font-bold text-caixa-azul uppercase text-sm">Liberdade Total</h4>
-                <p class="text-xs text-gray-600 mt-2">Escolha entre uma viagem para 2 pessoas no plano padrão ou use o acúmulo para um upgrade VIP internacional solo.</p>
+            <div class="bg-white p-6 rounded shadow-lg border-l-4 border-caixa-laranja">
+                <i class="fas fa-star text-caixa-laranja text-xl mb-3"></i>
+                <h4 class="font-bold text-caixa-azul uppercase text-sm">Flexibilidade Total</h4>
+                <p class="text-xs text-gray-600 mt-2">Um plano, infinitas possibilidades. Use sua cota para uma viagem de 2 pessoas ou converta em um Upgrade VIP Solo internacional.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-10 container mx-auto px-6">
+    <section class="py-16 container mx-auto px-6">
         <div class="bg-white rounded-lg shadow-xl overflow-hidden border border-gray-200">
-            <div class="p-8 flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-2/3">
-                    <span class="bg-caixa-azul text-white px-3 py-1 text-[10px] font-bold rounded uppercase">Rede de Benefícios</span>
-                    <h3 class="text-2xl font-bold text-caixa-azul mt-2 uppercase">Compre no comércio local e abata sua mensalidade</h3>
-                    <p class="text-sm text-gray-600 mt-4 leading-relaxed">Pague menos no seu consórcio consumindo em pizzarias, lojas e deliverys parceiros da <strong>VIBE Travel Go.</strong> Cada compra gera um bônus que vira desconto real na sua próxima parcela.</p>
+            <div class="bg-caixa-azul p-6 text-white">
+                <h3 class="text-2xl font-bold uppercase tracking-widest text-center">Clube VIBE Bônus: Sua Vida Gera Desconto</h3>
+            </div>
+            <div class="p-8 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <span class="bg-caixa-laranja text-white px-3 py-1 text-[10px] font-bold rounded uppercase">Inovação VIBE</span>
+                    <h4 class="text-xl font-bold text-caixa-azul mt-3 uppercase italic leading-tight">Compre localmente e viaje por menos</h4>
+                    <p class="mt-5 text-gray-600 leading-relaxed text-sm">Nós valorizamos a economia de Araruama. Ao consumir em pizzarias, restaurantes, lojas e deliverys parceiros da **VIBE Travel Go.**, você acumula bônus. Esses bônus viram abatimento real na sua próxima mensalidade.</p>
                 </div>
-                <div class="md:w-1/3 bg-gray-50 p-6 rounded text-center">
-                    <p class="text-[10px] font-bold uppercase text-gray-400 mb-2">Exemplo de Bônus</p>
-                    <div class="text-3xl font-bold text-caixa-azul">R$ 10,00</div>
-                    <p class="text-[10px] text-gray-500 uppercase mt-1 italic">de desconto por pizza consumida</p>
+                
+                <div class="rounded-lg shadow-inner bg-gray-50 border border-gray-100 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1541544321287-3d14e0828d54?q=80&w=800&auto=format&fit=crop" alt="Família feliz comendo pizza em família" class="w-full h-auto rounded-lg">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-black/60 text-white text-center">
+                        <p class="text-xs font-bold uppercase text-yellow-400">Momentos compartilhados</p>
+                        <p class="text-[10px] mt-1 italic">Cada pizza em família gera bônus na sua mensalidade!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-caixa-azul py-10">
-        <div class="container mx-auto px-6 text-center text-white">
-            <h4 class="font-bold text-lg mb-2 uppercase italic">Seja um estabelecimento parceiro</h4>
-            <p class="text-sm opacity-80 mb-6">Traga nossos clientes para sua loja e ajude-os a viajar o mundo.</p>
-            <a href="https://wa.me/5522992253254?text=Olá!%20Quero%20ser%20parceiro%20da%20VIBE%20Travel%20Go.%20e%20oferecer%20descontos%20na%20mensalidade." target="_blank" class="inline-block bg-white text-caixa-azul px-8 py-3 rounded-full font-bold shadow-xl hover:bg-gray-100 transition uppercase text-xs tracking-widest">
-                <i class="fas fa-handshake mr-2"></i> Cadastro de Parceiros
+    <section class="bg-white py-12 border-y border-gray-200">
+        <div class="container mx-auto px-6 text-center">
+            <i class="fas fa-handshake text-caixa-azul text-4xl mb-4"></i>
+            <h4 class="font-bold text-lg mb-2 uppercase text-caixa-azul">É lojista ou comerciante?</h4>
+            <p class="text-sm text-gray-500 mb-6">Traga novos clientes e fidelize os atuais fazendo parte da nossa rede de parceiros.</p>
+            <a href="https://wa.me/5522992253254?text=Olá!%20Sou%20lojista%20e%20gostaria%20de%20ser%20parceiro%20da%20VIBE%20Travel%20Go.%20e%20oferecer%20bônus." target="_blank" class="inline-block bg-caixa-azul text-white px-8 py-3 rounded-full font-bold shadow-xl hover:scale-105 transition uppercase text-xs tracking-widest">
+                Cadastro de Parceiros
             </a>
         </div>
     </section>
 
-    <footer class="bg-gray-200 py-12">
-        <div class="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
-            <div class="opacity-70 mb-4 md:mb-0">
+    <footer class="bg-gray-100 py-12 border-t border-gray-200">
+        <div class="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-600 opacity-70">
+            <div class="mb-6 md:mb-0">
                 <h5 class="font-bold text-caixa-azul mb-1 uppercase italic text-2xl tracking-tighter">VIBE Travel Go.</h5>
-                <p class="text-[10px] font-bold text-gray-600 uppercase">Administradora de Consórcios Independentes</p>
-                <p class="text-[9px] mt-1 text-gray-500 italic">Padrão de hospedagem Booking.com | Araruama - RJ</p>
+                <p class="text-[10px] uppercase font-bold text-gray-600">Administradora de Experiências Independentes</p>
+                <p class="text-[9px] mt-1 text-gray-500 italic">Curadoria de Hospedagens Booking.com | Araruama - RJ</p>
             </div>
             <div class="flex gap-4 opacity-40">
                 <i class="fab fa-facebook text-xl text-caixa-azul"></i>
                 <i class="fab fa-instagram text-xl text-caixa-azul"></i>
+                <i class="fab fa-whatsapp text-xl text-caixa-azul"></i>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/5522992777193?text=Olá!%20Quero%20mais%20informações%20sobre%20o%20consórcio%20VIBE%20Travel%20Go." class="fixed bottom-6 right-6 bg-[#25d366] text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition">
+    <a href="https://wa.me/5522992777193?text=Olá!%20Quero%20mais%20informações%20sobre%20o%20consórcio." class="fixed bottom-6 right-6 bg-[#25d366] text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
 
