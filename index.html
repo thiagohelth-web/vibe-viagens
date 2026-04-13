@@ -3,72 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIBE | Nomadismo Inteligente</title>
+    <title>VIBE | Consórcio de Viagens</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --cor-fundo: #F5EEDA; 
-            --cor-coral: #E2725B; 
-            --cor-ouro: #B78628;  
-            --cor-marrom: #4B3621; 
+            --caixa-azul: #005ca9;
+            --caixa-laranja: #f39200;
+            --caixa-cinza: #f0f1f2;
+            --caixa-texto: #333333;
         }
-        body { font-family: 'Montserrat', sans-serif; background-color: var(--cor-fundo); color: var(--cor-marrom); margin: 0; }
-        .font-vibe { font-family: 'Bebas Neue', cursive; }
-        .texture-overlay { background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); }
-        .hero-gradient {
-            background: linear-gradient(rgba(75, 54, 33, 0.6), rgba(75, 54, 33, 0.6)), url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1350&auto=format&fit=crop');
-            background-size: cover; background-position: center;
+        body { 
+            font-family: 'Open Sans', sans-serif; 
+            background-color: var(--caixa-cinza); 
+            color: var(--caixa-texto);
+            margin: 0;
+        }
+        .bg-caixa-azul { background-color: var(--caixa-azul); }
+        .text-caixa-azul { color: var(--caixa-azul); }
+        .btn-caixa { 
+            background-color: var(--caixa-laranja); 
+            color: white; 
+            font-weight: 700;
+            transition: 0.3s;
+        }
+        .btn-caixa:hover { background-color: #d68100; }
+        .hero-banner {
+            background: linear-gradient(90deg, var(--caixa-azul) 30%, rgba(0, 92, 169, 0.5) 100%), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?q=80&w=1335&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
-<body class="texture-overlay">
-    <header class="p-6 flex justify-between items-center border-b border-yellow-700 bg-white/50 backdrop-blur-sm sticky top-0 z-50">
-        <h1 class="text-4xl font-vibe tracking-widest text-vibe-marrom">VIBE<span style="color:var(--cor-coral)">.</span></h1>
-        <a href="https://wa.me/5522992777193" target="_blank" class="text-xs font-bold bg-yellow-700 text-white py-2 px-4 rounded-sm">CONTATO</a>
+<body>
+
+    <header class="bg-white border-b-4 border-[#f39200] py-4 px-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-caixa-azul text-white font-bold px-3 py-1 rounded text-2xl tracking-tighter italic">VIBE</div>
+                <div class="h-8 w-[2px] bg-gray-300 mx-2"></div>
+                <span class="text-caixa-azul font-bold text-sm uppercase leading-tight">Consórcio de<br>Viagens</span>
+            </div>
+            <a href="https://wa.me/5522992777193" target="_blank" class="text-xs font-bold text-caixa-azul border border-caixa-azul px-4 py-2 rounded hover:bg-caixa-azul hover:text-white transition">ACESSO DO CLIENTE</a>
+        </div>
     </header>
 
-    <section class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
-        <div class="bg-black/30 p-8 rounded-lg backdrop-blur-sm border border-white/10">
-            <span class="uppercase tracking-[0.4em] text-xs mb-4 block text-yellow-500 font-bold">Clube de Viajantes Independentes</span>
-            <h2 class="text-6xl md:text-8xl font-vibe mb-6">O MUNDO AGUARDA</h2>
-            <p class="max-w-xl mx-auto text-lg font-light mb-8 italic">Poupe agora. Explore depois. R$ 350/mês para sua aventura de R$ 7.000.</p>
-            <a href="https://wa.me/5522992777193" class="bg-[#E2725B] text-white text-xl font-vibe py-4 px-10 rounded-sm hover:bg-orange-700 transition">QUERO VIAJAR</a>
-        </div>
-    </section>
-
-    <section class="py-20 container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <h3 class="text-4xl font-vibe text-vibe-marrom">A LOGÍSTICA VIBE</h3>
-                <ul class="space-y-4 text-lg border-l-4 border-yellow-700 pl-6">
-                    <li><strong style="color:var(--cor-coral)">Grupo:</strong> 50 membros exclusivos.</li>
-                    <li><strong style="color:var(--cor-coral)">Mensal:</strong> R$ 350,00 fixos.</li>
-                    <li><strong style="color:var(--cor-coral)">Fundo:</strong> 8 meses de carência (caixa).</li>
-                    <li><strong style="color:var(--cor-coral)">Sorteios:</strong> R$ 7.000 mensais no Mês 9.</li>
-                </ul>
-            </div>
-            <div class="bg-white p-8 shadow-xl border-t-8 border-[#E2725B]">
-                <h4 class="font-vibe text-3xl mb-4 uppercase">Escolha sua Parada</h4>
-                <div class="grid grid-cols-2 gap-3 mb-8">
-                    <div class="border border-yellow-700 p-3 text-center text-xs font-bold uppercase">Gramado</div>
-                    <div class="border border-yellow-700 p-3 text-center text-xs font-bold uppercase">P. Galinhas</div>
-                    <div class="border border-yellow-700 p-3 text-center text-xs font-bold uppercase">Arraial</div>
-                    <div class="border border-yellow-700 p-3 text-center text-xs font-bold uppercase">B. Aires</div>
+    <section class="hero-banner py-20 px-6 text-white">
+        <div class="container mx-auto">
+            <div class="max-w-lg">
+                <h2 class="text-4xl font-bold mb-4 leading-tight">Sua próxima viagem começa com planejamento.</h2>
+                <p class="text-lg mb-8 opacity-90 font-light">Com o Consórcio VIBE, você conquista seu destino de forma segura, sem juros e com parcelas que cabem no bolso.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/5522992777193" class="btn-caixa px-8 py-3 rounded shadow-lg text-lg uppercase">Simular Agora</a>
                 </div>
-                <a href="https://wa.me/5522992777193" class="block text-center bg-[#4B3621] text-white py-4 font-bold rounded-sm shadow-md">GARANTIR VAGA (WhatsApp)</a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#4B3621] text-white py-12 text-center border-t-4 border-yellow-700">
-        <h5 class="font-vibe text-3xl mb-4 tracking-widest text-yellow-500">VIBE TRAVEL CO.</h5>
-        <p class="text-xs opacity-70">Araruama - RJ | WhatsApp: 22 99277-7193</p>
+    <section class="py-16 container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-caixa-azul">Encontre o plano ideal para você</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-caixa-azul">
+                <div class="p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-file-contract text-caixa-azul text-2xl"></i>
+                        <h4 class="text-xl font-bold uppercase text-caixa-azul">Regras do Grupo</h4>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between border-b pb-2">
+                            <span class="text-gray-500">Sistema</span>
+                            <span class="font-semibold italic">Fundo Comum</span>
+                        </li>
+                        <li class="flex justify-between border-b pb-2">
+                            <span class="text-gray-500">Mensalidade</span>
+                            <span class="font-semibold">Parcelas Fixas</span>
+                        </li>
+                        <li class="flex justify-between border-b pb-2">
+                            <span class="text-gray-500">Formação de Grupo</span>
+                            <span class="font-semibold">Carência Estratégica</span>
+                        </li>
+                        <li class="flex justify-between border-b pb-2 text-caixa-azul">
+                            <span class="font-bold">Contemplação</span>
+                            <span class="font-bold uppercase">Mensal</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden border-t-4 border-caixa-azul">
+                <div class="p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <i class="fas fa-plane text-caixa-azul text-2xl"></i>
+                        <h4 class="text-xl font-bold uppercase text-caixa-azul">Destinos Atendidos</h4>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-caixa-cinza p-3 rounded font-bold text-xs text-center border border-gray-200 uppercase">Gramado (RS)</div>
+                        <div class="bg-caixa-cinza p-3 rounded font-bold text-xs text-center border border-gray-200 uppercase">P. Galinhas (PE)</div>
+                        <div class="bg-caixa-cinza p-3 rounded font-bold text-xs text-center border border-gray-200 uppercase">Arraial (RJ)</div>
+                        <div class="bg-caixa-cinza p-3 rounded font-bold text-xs text-center border border-gray-200 uppercase">B. Aires (ARG)</div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://wa.me/5522992777193" class="btn-caixa block text-center py-4 rounded uppercase tracking-wider">Consultar Disponibilidade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-200 py-10">
+        <div class="container mx-auto px-6 text-center md:text-left flex flex-col md:flex-row justify-between items-center opacity-70">
+            <div>
+                <h5 class="font-bold text-caixa-azul mb-2">VIBE TRAVEL CO.</h5>
+                <p class="text-xs uppercase">Administradora de Consórcio de Viagens Independentes</p>
+                <p class="text-[10px] mt-1 italic">Araruama - Rio de Janeiro</p>
+            </div>
+            <div class="mt-6 md:mt-0 flex gap-6">
+                <i class="fab fa-facebook text-caixa-azul text-xl"></i>
+                <i class="fab fa-instagram text-caixa-azul text-xl"></i>
+                <i class="fab fa-linkedin text-caixa-azul text-xl"></i>
+            </div>
+        </div>
     </footer>
 
-    <a href="https://wa.me/5522992777193" class="fixed bottom-8 right-8 bg-[#E2725B] text-white p-5 rounded-full shadow-2xl z-50">
+    <a href="https://wa.me/5522992777193" class="fixed bottom-6 right-6 bg-[#25d366] text-white p-4 rounded-full shadow-2xl z-50 hover:scale-110 transition">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
+
 </body>
 </html>
