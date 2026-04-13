@@ -8,76 +8,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #f4f1ea; color: #3d3d3d; }
-        .font-vibe { font-family: 'Bebas Neue', cursive; }
-        .bg-rustic-red { background-color: #922b21; } /* Vermelho Terracota */
-        .text-rustic-red { color: #922b21; }
-        .border-rustic { border-color: #d4a373; }
-        .texture-overlay {
-            background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+        :root {
+            --cor-fundo: #F5EEDA; 
+            --cor-coral: #E2725B; 
+            --cor-ouro: #B78628;  
+            --cor-marrom: #4B3621; 
         }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--cor-fundo); color: var(--cor-marrom); margin: 0; }
+        .font-vibe { font-family: 'Bebas Neue', cursive; }
+        .texture-overlay { background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png'); }
         .hero-gradient {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1350&q=80');
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(rgba(75, 54, 33, 0.6), rgba(75, 54, 33, 0.6)), url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?q=80&w=1350&auto=format&fit=crop');
+            background-size: cover; background-position: center;
         }
     </style>
 </head>
 <body class="texture-overlay">
-
-    <header class="p-6 flex justify-between items-center border-b border-gray-200">
-        <h1 class="text-4xl font-vibe tracking-widest text-rustic-red">VIBE.</h1>
-        <a href="https://wa.me/5522992777193" target="_blank" class="text-sm font-bold border-b-2 border-rustic-red pb-1 hover:text-black transition">CONTATO</a>
+    <header class="p-6 flex justify-between items-center border-b border-yellow-700 bg-white/50 backdrop-blur-sm sticky top-0 z-50">
+        <h1 class="text-4xl font-vibe tracking-widest text-vibe-marrom">VIBE<span style="color:var(--cor-coral)">.</span></h1>
+        <a href="https://wa.me/5522992777193" target="_blank" class="text-xs font-bold bg-yellow-700 text-white py-2 px-4 rounded-sm">CONTATO</a>
     </header>
 
-    <section class="hero-gradient h-[70vh] flex items-center justify-center text-center text-white px-4">
-        <div>
-            <span class="uppercase tracking-[0.3em] text-sm mb-4 block">Clube de Viajantes</span>
-            <h2 class="text-6xl md:text-8xl font-vibe mb-6">O MUNDO É O SEU QUINTAL</h2>
-            <p class="max-w-xl mx-auto text-lg font-light mb-8 italic">Poupe agora. Explore depois. Um sistema de consórcio feito para nômades modernos.</p>
-            <a href="#plano" class="bg-rustic-red hover:bg-red-900 text-white font-bold py-4 px-10 rounded-sm transition shadow-2xl">VER PLANO 7K</a>
+    <section class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div class="bg-black/30 p-8 rounded-lg backdrop-blur-sm border border-white/10">
+            <span class="uppercase tracking-[0.4em] text-xs mb-4 block text-yellow-500 font-bold">Clube de Viajantes Independentes</span>
+            <h2 class="text-6xl md:text-8xl font-vibe mb-6">O MUNDO AGUARDA</h2>
+            <p class="max-w-xl mx-auto text-lg font-light mb-8 italic">Poupe agora. Explore depois. R$ 350/mês para sua aventura de R$ 7.000.</p>
+            <a href="https://wa.me/5522992777193" class="bg-[#E2725B] text-white text-xl font-vibe py-4 px-10 rounded-sm hover:bg-orange-700 transition">QUERO VIAJAR</a>
         </div>
     </section>
 
-    <section id="plano" class="py-20 container mx-auto px-6">
+    <section class="py-20 container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="border-l-8 border-rustic-red pl-8">
-                <h3 class="text-4xl font-vibe text-gray-800 mb-6 uppercase">Como o VIBE funciona</h3>
-                <ul class="space-y-6 text-lg">
-                    <li><strong class="text-rustic-red">01.</strong> Grupo exclusivo de 50 viajantes.</li>
-                    <li><strong class="text-rustic-red">02.</strong> Apenas R$ 350 mensais (menos de R$ 12 por dia).</li>
-                    <li><strong class="text-rustic-red">03.</strong> 8 meses de carência para formar o fundo de giro.</li>
-                    <li><strong class="text-rustic-red">04.</strong> Sorteios mensais de R$ 7.000 a partir do 9º mês.</li>
+            <div class="space-y-6">
+                <h3 class="text-4xl font-vibe text-vibe-marrom">A LOGÍSTICA VIBE</h3>
+                <ul class="space-y-4 text-lg border-l-4 border-yellow-700 pl-6">
+                    <li><strong style="color:var(--cor-coral)">Grupo:</strong> 50 membros exclusivos.</li>
+                    <li><strong style="color:var(--cor-coral)">Mensal:</strong> R$ 350,00 fixos.</li>
+                    <li><strong style="color:var(--cor-coral)">Fundo:</strong> 8 meses de carência (caixa).</li>
+                    <li><strong style="color:var(--cor-coral)">Sorteios:</strong> R$ 7.000 mensais no Mês 9.</li>
                 </ul>
             </div>
-            <div class="bg-white p-10 shadow-xl border-t-4 border-rustic-red">
-                <h4 class="font-vibe text-3xl mb-4">Sua Próxima Parada</h4>
-                <p class="text-gray-600 mb-6">Escolha entre 5 destinos épicos quando for contemplado. De montanhas a ilhas paradisíacas.</p>
-                <div class="flex flex-wrap gap-2 mb-8">
-                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Gramado</span>
-                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Porto de Galinhas</span>
-                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Arraial do Cabo</span>
-                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Buenos Aires</span>
-                    <span class="bg-gray-100 px-3 py-1 text-xs font-bold uppercase border">Foz do Iguaçu</span>
+            <div class="bg-white p-8 shadow-xl border-t-8 border-[#E2725B]">
+                <h4 class="font-vibe text-3xl mb-4 uppercase">Escolha sua Parada</h4>
+                <div class="grid grid-cols-2 gap-3 mb-8">
+                    <div class="border border-yellow-700 p-3 text-center text-xs font-bold uppercase">Gramado</div>
+                    <div class="border border-yellow-700 p-3 text-center text-xs font-bold uppercase">P. Galinhas</div>
+                    <div class="border border-yellow-700 p-3 text-center text-xs font-bold uppercase">Arraial</div>
+                    <div class="border border-yellow-700 p-3 text-center text-xs font-bold uppercase">B. Aires</div>
                 </div>
-                <a href="https://wa.me/5522992777193?text=Quero%20entrar%20no%20grupo%20VIBE" class="block text-center bg-gray-900 text-white py-4 font-bold hover:bg-black transition">GARANTIR MINHA VAGA</a>
+                <a href="https://wa.me/5522992777193" class="block text-center bg-[#4B3621] text-white py-4 font-bold rounded-sm shadow-md">GARANTIR VAGA (WhatsApp)</a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-100 py-12 border-t border-gray-200 text-center">
-        <p class="font-vibe text-2xl text-gray-400 mb-4 tracking-tighter">VIBE TRAVEL CO.</p>
-        <p class="text-xs uppercase tracking-widest text-gray-500">Araruama - RJ | WhatsApp: 22 99277-7193</p>
-        <div class="mt-8 flex justify-center space-x-6 text-gray-400">
-            <i class="fab fa-instagram text-xl"></i>
-            <i class="fab fa-facebook text-xl"></i>
-            <i class="fab fa-whatsapp text-xl"></i>
-        </div>
+    <footer class="bg-[#4B3621] text-white py-12 text-center border-t-4 border-yellow-700">
+        <h5 class="font-vibe text-3xl mb-4 tracking-widest text-yellow-500">VIBE TRAVEL CO.</h5>
+        <p class="text-xs opacity-70">Araruama - RJ | WhatsApp: 22 99277-7193</p>
     </footer>
 
-    <a href="https://wa.me/5522992777193" class="fixed bottom-8 right-8 bg-rustic-red text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
-        <i class="fab fa-whatsapp text-2xl"></i>
+    <a href="https://wa.me/5522992777193" class="fixed bottom-8 right-8 bg-[#E2725B] text-white p-5 rounded-full shadow-2xl z-50">
+        <i class="fab fa-whatsapp text-3xl"></i>
     </a>
-
 </body>
 </html>
